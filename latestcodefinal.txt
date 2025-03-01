@@ -1,0 +1,52 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const axios = require('axios');
+
+const API_KEY = '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'; // Your API key
+const API_URL = 'https://api.openai.com/v1/chat/completions';
+
+const app = express();
+app.use(bodyParser.json());
+
+// ✅ Fix: Define a root route to prevent "Cannot GET /"
+app.get('/', (req, res) => {
+    res.send('Welcome to IntelliInvest API!');
+});
+
+// Existing sectorParticipants route
+app.get('/sectorParticipants', async (req, res) => {
+    const message = 'What is the percentage share of the products manufactured in India by Indian tyre manufacturers';
+
+    try {
+        const response = await axios.post(API_URL, {
+            messages: [
+                { role: 'system', content: 'You are a helpful assistant.' },
+                { role: 'user', content: message }
+            ],
+            model: 'gpt-3.5-turbo',
+            max_tokens: 100,
+        }, {
+            headers: {
+                'Authorization': `Bearer ${API_KEY}`,
+                'Content-Type': 'application/json',
+            },
+        });
+
+        const reply = response.data.choices[0].message.content;
+        console.log(reply);
+        res.json({ reply });
+
+    } catch (error) {
+        console.error('Error:', error.response?.data || error.message);
+        res.status(500).json({ error: 'An error occurred while processing the request.' });
+    }
+});
+
+// Keep this if you need POST, otherwise remove it
+app.post('/sectorParticipants', (req, res) => {
+    res.json({ message: "POST request received, but no logic is implemented yet." });
+});
+
+app.listen(4000, () => {
+    console.log('Listening on port 4000');
+});

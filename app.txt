@@ -1,0 +1,43 @@
+const express = require ('express');
+const bodyParser = require ('body-parser');
+// import node-fetch
+const axios = require('axios');
+// Set up your API credentials
+const API_KEY = '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';
+const API_URL = 'https://api.openai.com/v1/chat/completions';
+
+const app = express ();
+app.use(bodyParser.json());
+
+app.get('/sectorParticipants', async(req,res) => {
+
+    const { message } = { "message" :'What is the percentage share of the products manufactured in India by Indian tyre manufacturers'};
+    console.log(message);
+  try {
+    const response = await axios.post(API_URL, {
+      messages: [{ role: 'system', content: 'You are a helpful assistant.' }, { role: 'user', content: message }],
+      model: 'gpt-3.5-turbo',
+      max_tokens: 100,
+    }, {
+      headers: {
+        'Authorization': `Bearer ${API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    // Extract the generated reply
+    const reply = response.data.choices[0].message.content;
+    console.log(message);
+    res.json({ reply });}
+    catch (error) {
+        console.error('Error:', error.response.data);
+        res.status(500).json({ error: 'An error occurred while processing the request.' });
+      }
+    res.send();
+});
+app.post('/sectorParticipants', (req,res) => {
+    
+});
+app.listen(4000, () => {
+    console.log('listening on 4000');
+});

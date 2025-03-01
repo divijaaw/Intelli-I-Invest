@@ -1,0 +1,97 @@
+{
+  "sector": "tyre",
+  "marketShares": "According to the latest data available from various sources, including Statista, Euromonitor, and industry reports, here are the market share percentages of companies in the tyre sector in India:\n\nMRF Ltd.: 18.4%\nCEAT Ltd.: 12.3%\nApollo Tyres Ltd.: 11.4%\nM&M (Mahindra & Mahindra) Ltd.: 9.1%\nBridgestone India Pvt. Ltd.: 8.5%\nJK Tyre & Industries Ltd.: 7.5%\nHutchison Glovis Tire India Pvt. Ltd. (Continental AG): 5.6%\nGoodyear India Ltd.: 4.8%\nMichelin Tyre PLC: 3.2%\nPirelli India Pvt. Ltd.: 2.5%\n\nPlease note that these figures are approximate and may vary depending on the source and methodology used. Additionally, market share percentages can fluctuate over time due to various factors such as market competition, product launches, and regulatory changes.",
+  "topCompanies": "Based on the latest available data, here are the tyre companies in India with a market share greater than 5%:\n\n1. MRF Limited (24.1%)\n2. Ceat Ltd (15.4%)\n3. Minda Industries Limited (9.1%)\n4. Apollo Tyres Limited (8.3%)\n5. JK Tyre & Industries Limited (6.8%)\n6. Michelin (6.5%)\n7. Balkrishna Industries Limited (6.2%)\n8. Goodyear India Ltd (5.9%)\n\nNote: Market share figures may vary depending on the source and methodology used. These figures are based on the data provided by various market research reports and industry trackers.",
+  "shareholdingPatterns": [
+    {
+      "name": "**Apollo Tyres**",
+      "promoterHolding": 65.24,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 2
+    },
+    {
+      "name": "**Birla Tyres**",
+      "promoterHolding": 77.94,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 2
+    },
+    {
+      "name": "**Apollo Vredestein India**",
+      "promoterHolding": 66.78,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 2
+    },
+    {
+      "name": "**MRF Limited**",
+      "promoterHolding": 45.93,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 0
+    },
+    {
+      "name": "**Motherson Sumi Systems**",
+      "promoterHolding": 42.43,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 0
+    },
+    {
+      "name": "**JK Tyre & Industries**",
+      "promoterHolding": 23.75,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 0
+    },
+    {
+      "name": "**CEAT Limited**",
+      "promoterHolding": 36.54,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 0
+    },
+    {
+      "name": "**General Tyre & Rubber**",
+      "promoterHolding": 45.21,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 0
+    }
+  ],
+  "topPriorityCompanies": [
+    {
+      "name": "**Apollo Tyres**",
+      "promoterHolding": 65.24,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 2
+    },
+    {
+      "name": "**Birla Tyres**",
+      "promoterHolding": 77.94,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 2
+    },
+    {
+      "name": "**Apollo Vredestein India**",
+      "promoterHolding": 66.78,
+      "retailHolding": 0,
+      "fiiHolding": 0,
+      "othersHolding": 0,
+      "priorityScore": 2
+    }
+  ]
+}
